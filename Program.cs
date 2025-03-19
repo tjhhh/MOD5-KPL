@@ -16,5 +16,12 @@ class program
         Console.WriteLine(input3);
         PemrosesanData proses = new PemrosesanData();
         proses.DapatkanNilaiTerbesar(input1, input2, input3);
+
+        SimpleDataBase<double> simpan = new SimpleDataBase<double>();
+        simpan.addNewData(input1);
+        simpan.addNewData(input2);
+        simpan.addNewData(input3);
+        simpan.PrintAllData();
+
     }
 }
